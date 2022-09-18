@@ -17,7 +17,6 @@ public class PlayDough extends Toy{
     public Color getColor(){return this.color;}
 
     protected void specialPlay(int time){
-        System.out.println("PLAYING(" + time + "): " + toString());
         System.out.println("\tArts and crafting with " +
                             this.color +
                             " " + this.getName());

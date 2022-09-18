@@ -25,7 +25,7 @@ public abstract class Toy implements IToy {
 
     @Override
     public boolean isRetired() {
-        if(getHappiness() > MAX_HAPPINESS) {
+        if(getHappiness() >= MAX_HAPPINESS) {
             return true;
         }
         return false;
@@ -41,6 +41,7 @@ public abstract class Toy implements IToy {
 
     @Override
     public void play(int minutes) {
+        System.out.println("PLAYING(" + minutes + "): " + toString());
         specialPlay(minutes);
         this.happiness += minutes;
         if(isRetired()){
