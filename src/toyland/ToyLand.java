@@ -72,7 +72,17 @@ public class ToyLand {
      *    otherwise add it to the back of the retired toys
      */
     public void playTime() {
-        // TODO
+        int numToys = activeToys.size();
+        IToy toy;
+        while(retiredToys.size() < numToys) {
+            toy = activeToys.remove(0);
+            toy.play(getRandomTime());
+            if (toy.isRetired()) {
+                retiredToys.add(toy);
+            } else {
+                activeToys.add(toy);
+            }
+        }
     }
 
     /**
@@ -84,7 +94,19 @@ public class ToyLand {
      * Print the average wear of all toys
      */
     public void displayStatistics() {
-        // TODO
+        int total_happiness = 0;
+        int total_toys = 0;
+        double total_wear = 0.0;
+        System.out.println("Retired toys:");
+        for(var toy : retiredToys) {
+            System.out.println("\t" + toy);
+            total_toys += 1;
+            total_happiness += toy.getHappiness();
+            total_wear += toy.getWear();
+        }
+        System.out.println("Total toys: " + total_toys);
+        System.out.println("Total happiness: " + total_happiness);
+        System.out.println("Average wear: " + total_wear / total_toys);
     }
 
     /**
