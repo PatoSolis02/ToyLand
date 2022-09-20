@@ -1,5 +1,12 @@
 package toys;
 
+/**
+ * A PlayDough is a toy, so it extends Toy. It also
+ * implements its own constructor, an accessor for
+ * color, special play, and its specific toString.
+ *
+ * @author Patricio Solis
+ */
 public class PlayDough extends Toy{
 
     /** factor to calculate amount of wear */

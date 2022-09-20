@@ -1,5 +1,13 @@
 package toys;
 
+/**
+ * A Doll is a toy, so it extends Toy. It also
+ * implements its own constructor, an accessor for
+ * hair color, an accessor for the age, an accessor
+ * for speak, special play, and its specific toString.
+ *
+ * @author Patricio Solis
+ */
 public class Doll extends Toy{
     /** color of the Doll's hair */
     private Color hairColor;

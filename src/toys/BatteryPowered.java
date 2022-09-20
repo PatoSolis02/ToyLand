@@ -1,5 +1,15 @@
 package toys;
 
+/**
+ * BatteryPowered is a subclass of Toy, so it
+ * extends Toy. It implements an accessor for
+ * the number of batteries, an accessor for
+ * the battery level, a special function that
+ * tracks the battery level after being played
+ * with, and a specific toString
+ *
+ * @author Patricio Solis
+ */
 public abstract class BatteryPowered extends Toy{
     /** the highest battery level of the BatteryPowered Toy */
     private final static int FULLY_CHARGED = 100;

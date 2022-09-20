@@ -1,5 +1,13 @@
 package toys;
 
+/**
+ * ActionFigure is a subclass of Doll, so it
+ * extends Doll. It implements an accessor for
+ * the energy level, a special play, and a
+ * specific toString
+ *
+ * @author Patricio Solis
+ */
 public class ActionFigure extends Doll{
     /** hair color for all action figures */
     private static final Color HAIR_COLOR = Color.ORANGE;

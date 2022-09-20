@@ -1,5 +1,11 @@
 package toys;
 
+/**
+ * A toy is an object that can be played with.
+ * Implements IToy.
+ *
+ * @author Patricio Solis
+ */
 public abstract class Toy implements IToy {
     private final static int INITIAL_HAPPINESS = 0;
     private final static int MAX_HAPPINESS = 100;
@@ -51,6 +57,13 @@ public abstract class Toy implements IToy {
 
     protected abstract void specialPlay(int minutes);
 
+
+    /**
+     * Formatted output of Toy's attributes (unique code,
+     * name, happiness, retired or not, and wear)
+     *
+     * @return String that includes all desired toy information
+     */
     @Override
     public String toString() {
         return "Toy{PC:" + this.code + ", N:"

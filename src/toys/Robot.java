@@ -1,5 +1,13 @@
 package toys;
 
+/**
+ * A Robot is a battery powered toy, so it extends BatteryPowered
+ * which extends Toy. It also implements its own constructor,
+ * an accessor to check state of flying, an accessor for the
+ * distance travelled, special play, and its specific toString.
+ *
+ * @author Patricio Solis
+ */
 public class Robot extends BatteryPowered {
     /** speed of Robot when flying */
     private static final int FLY_SPEED = 25;

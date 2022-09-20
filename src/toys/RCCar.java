@@ -1,5 +1,13 @@
 package toys;
 
+/**
+ * An RCCar is a battery powered toy, so it extends BatteryPowered
+ * which extends Toy. It also implements its own constructor,
+ * an accessor to current speed, special play, and its specific
+ * toString.
+ *
+ * @author Patricio Solis
+ */
 public class RCCar extends BatteryPowered{
     /** initial speed of RCCar */
     private static final int STARTING_SPEED = 10;
